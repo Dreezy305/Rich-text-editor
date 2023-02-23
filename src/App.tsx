@@ -21,9 +21,16 @@ const modules = {
   ],
 };
 
+const QuillReg = Quill.register("", {});
+
+
 function App() {
   const [value, setValue] = useState<string>("");
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const onChange = (e: any) => {
+    console.log(e);
+  };
   // var deltaMethods = Quill.getSelection();
   return (
     <div className="parent">
@@ -34,7 +41,7 @@ function App() {
           <ReactQuill
             theme="snow"
             value={value}
-            onChange={setValue}
+            onChange={(e: any) => onChange(e)}
             className="quill-container"
             modules={modules}
           />
