@@ -24,11 +24,12 @@ const modules = {
 };
 
 function App() {
+  const editorRef: any = useRef(null);
   const [value, setValue] = useState<any>();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [show, setShow] = useState<boolean>(false);
   const [video, setVideo] = useState<string>("");
-  const editorRef: any = useRef(null);
+  const [title, setTitle] = useState<string>("");
 
   const onChange = (e: any) => {
     setValue(e);
@@ -57,7 +58,16 @@ function App() {
       <div className="parent">
         <div className="quill-box">
           <div className="top-div" />
-          <h4 className="title">This is the title</h4>
+          <div className="title-container">
+            {/* <h4 className="title">Title</h4> */}
+            <input
+              className="title-container-input"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              type="text"
+              placeholder="Enter title"
+            />
+          </div>
           <div className="quill-parent">
             <ReactQuill
               theme="snow"
