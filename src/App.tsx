@@ -31,6 +31,7 @@ function App() {
   const [video, setVideo] = useState<string>("");
   const [title, setTitle] = useState<string>("");
   const [preview, setPreview] = useState<any>();
+  const [type, setType] = useState<string>("");
 
   const onChange = (e: any) => {
     console.log(e);
@@ -122,7 +123,12 @@ function App() {
                   </div>
                 </div>
 
-                <div className="embed-option" onClick={() => setIsOpen(false)}>
+                <div
+                  className="embed-option"
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   <Social />
                   <div className="embed-stack">
                     <span className="span-1">Social</span>
