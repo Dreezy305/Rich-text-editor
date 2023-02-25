@@ -30,6 +30,7 @@ function App() {
   const [show, setShow] = useState<boolean>(false);
   const [video, setVideo] = useState<string>("");
   const [title, setTitle] = useState<string>("");
+  const [preview, setPreview] = useState<any>();
 
   const onChange = (e: any) => {
     setValue(e);
@@ -54,7 +55,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="container">
       <div className="parent">
         <div className="quill-box">
           <div className="top-div" />
@@ -157,10 +158,20 @@ function App() {
         </div>
 
         <div className="post-btn-container">
-          <button className="post-btn">post</button>
+          <button
+            className="post-btn"
+            onClick={() => {
+              setPreview(value);
+            }}
+          >
+            post
+          </button>
         </div>
       </div>
-    </>
+
+      <div className="divider" />
+      <div className="preview" dangerouslySetInnerHTML={{ __html: preview }}></div>
+    </div>
   );
 }
 

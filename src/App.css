@@ -37,12 +37,29 @@
   }
 }
 
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.divider {
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 1px solid #333;
+  min-height: 100vh;
+}
+
 .parent {
   width: 500px;
   border: 0px;
-  margin: auto;
+  /* margin: auto; */
   margin-top: 10px;
   min-height: 100vh;
+  margin-left: 10px;
 }
 
 .quill-box {

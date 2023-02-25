@@ -24,3 +24,8 @@ library: React Quill
 
 React Quill is a rich a text editor used to handle various text variations from indentations, list (bullet and number)
 
+click on the enter title placeholder to type in the title of the article 
+
+type in words / text inside the text editor 
+
+click on post then you can preview your text / words
