@@ -31,7 +31,7 @@ function App() {
   const [video, setVideo] = useState<string>("");
   const [title, setTitle] = useState<string>("");
   const [preview, setPreview] = useState<any>();
-  const [type, setType] = useState<string>("");
+  // const [type, setType] = useState<string>("");
 
   const onChange = (e: any) => {
     console.log(e);
