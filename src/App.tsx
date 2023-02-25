@@ -170,7 +170,11 @@ function App() {
       </div>
 
       <div className="divider" />
-      <div className="preview" dangerouslySetInnerHTML={{ __html: preview }}></div>
+
+      <div>
+        <h5 className="preview">Preview</h5>
+        <div className="" dangerouslySetInnerHTML={{ __html: preview }} />
+      </div>
     </div>
   );
 }
