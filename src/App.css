@@ -47,14 +47,14 @@
 }
 
 .divider {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
   border: 1px solid #333;
   min-height: 100vh;
 }
 
 .parent {
-  width: 700px;
+  width: 500px;
   border: 0px;
   /* margin: auto; */
   margin-top: 10px;
