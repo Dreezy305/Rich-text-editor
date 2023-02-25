@@ -33,6 +33,7 @@ function App() {
   const [preview, setPreview] = useState<any>();
 
   const onChange = (e: any) => {
+    console.log(e);
     setValue(e);
   };
 
@@ -53,6 +54,8 @@ function App() {
     });
     setIsOpen(false);
   };
+
+  // <p><a href="https://stackoverflow.com/questions/69704201/how-to-insert-link-for-hashtags-and-mentions-in-react-quill" rel="noopener noreferrer" target="_blank">stackover</a></p>
 
   return (
     <div className="container">

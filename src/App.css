@@ -47,14 +47,14 @@
 }
 
 .divider {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: 1px solid #333;
   min-height: 100vh;
 }
 
 .parent {
-  width: 500px;
+  width: 700px;
   border: 0px;
   /* margin: auto; */
   margin-top: 10px;
@@ -135,6 +135,7 @@
   height: 100%;
   border-left: 0px !important;
   border-right: 0px !important;
+  overflow: hidden;
 }
 
 .ql-container.ql-snow {
